@@ -39,7 +39,7 @@ function scroll_page() {
 
                     pagination += "</ol>";
 
-                    $("#main-content").append(pagination);
+                    $("body").append(pagination);
                     /*
 
                     Tip: The two click events below are the same:
