@@ -1,4 +1,4 @@
-const path =  require('path');
+const path = require('path');
 const extract = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -7,7 +7,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
-
     module: {
         rules: [
             {
@@ -21,7 +20,7 @@ module.exports = {
                 }
             },
             {
-                test:/\.(sa|sc|c)ss$/,
+                test: /\.(sa|sc|c)ss$/,
                 use: [
                     {
                         loader: extract.loader
@@ -55,5 +54,8 @@ module.exports = {
             filename: 'bundle.css'
         })
     ],
+    externals: {
+        jquery: 'jQuery'
+    },
     mode: 'production'
 }
