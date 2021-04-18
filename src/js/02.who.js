@@ -46,6 +46,6 @@ $('.panel-slickslider').slick({
     slidesToShow: 1,
     autoplay: false,
     adaptiveHeight: true,
-    nextArrow: $('.next-link')[index],
-    prevArrow: $('.prev-prev')[index],
+    nextArrow: $('.next-link'),
+    prevArrow: $('.prev-link')
 });
