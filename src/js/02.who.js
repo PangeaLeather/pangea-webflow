@@ -40,7 +40,7 @@ $('.prev-link').click(function (e) {
 });
 
 $('.panel-slickslider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
