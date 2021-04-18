@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'tooltipster';
+import 'tooltipster/dist/css/tooltipster.bundle.min.css';
 import '../scss/02.who.scss';
 
 window.jQuery = $;
