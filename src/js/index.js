@@ -1,6 +1,6 @@
-import 'jQuery'
-import 'jquery-scrollify';
-import 'slick-carousel';
+// import 'jQuery'
+// import 'jquery-scrollify';
+// import 'slick-carousel';
 import '../scss/pangea-global.scss';
 
 // scrollify .panel scrolljack + scrollsnap
