@@ -1,0 +1,38 @@
+{
+  "name": "pangea-webflow",
+  "version": "1.0.0",
+  "description": "Pangeamade.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcackowski/pangea-webflow.git"
+  },
+  "author": "Jay Cackowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcackowski/pangea-webflow/issues"
+  },
+  "homepage": "https://github.com/jcackowski/pangea-webflow#readme",
+  "dependencies": {
+    "jquery-scrollify": "^1.0.21",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.2",
+    "cssnano": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^1.5.0",
+    "postcss": "^8.2.10",
+    "sass": "^1.32.10",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
