@@ -39,7 +39,7 @@ $('.prev-link').click(function (e) {
     $('.w-slider-arrow-left').trigger('tap')
 });
 
-$('.slider').slick({
+$('.panel-slickslider').slick({
     dots: true,
     infinite: true,
     speed: 300,
