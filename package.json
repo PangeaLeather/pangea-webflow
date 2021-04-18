@@ -20,7 +20,8 @@
     "jquery": "^3.6.0",
     "jquery-scrollify": "^1.0.21",
     "slick-carousel": "^1.8.1",
-    "tooltipster": "^4.2.8"
+    "tooltipster": "^4.2.8",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
