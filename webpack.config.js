@@ -54,8 +54,8 @@ module.exports = {
             filename: 'bundle.css'
         })
     ],
-    externals: {
-        jquery: 'jQuery'
-    },
+    // externals: {
+    //     jquery: 'jQuery'
+    // },
     mode: 'production'
 }
