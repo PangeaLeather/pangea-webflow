@@ -47,3 +47,13 @@ $('.panel-slickslider').slick({
     autoplay: false,
     adaptiveHeight: true
 });
+
+//slick slider custom links
+$(".next-link").click(function (e) {
+    e.preventDefault();
+    $('.slick-next').trigger('tap')
+});
+$(".prev-link").click(function (e) {
+    e.preventDefault();
+    $('.slick-prev').trigger('tap')
+});
