@@ -1,0 +1,108 @@
+@import "webflow-breakpoints";
+
+.tl-point {
+  fill: #e05638;
+
+  &:hover {
+    fill: #fff;
+  }
+}
+
+.timeline-markers .w-dyn-item:nth-child(even) .tl-year {
+  transform: translate(0, -2rem);
+}
+
+.timeline {
+  overflow-x: scroll;
+}
+
+.timeline-tooltip {
+  padding-left: 1rem;
+  border-left: 1px solid #fff;
+
+  h4 {
+    margin: 0;
+    font-family: "Noe Display", serif;
+    font-size: 10em;
+    color: #fff;
+    line-height: 1em;
+    transform: translate(0, -1rem);
+
+    @media screen and (max-width: $break-tablet) {
+      font-size: 8em;
+      transform: none;
+    }
+  }
+  p {
+    margin: 0;
+    color: #fff;
+  }
+}
+
+.loc {
+  svg {
+    fill: magenta;
+    width: 1vw;
+    max-width: 1rem;
+    height: auto;
+  }
+  &:hover {
+    svg {
+      filter: drop-shadow(0 0.1rem 0.1rem rgba(0, 0, 0, 0.75));
+    }
+  }
+  &.Headquarters svg {
+    fill: #fff;
+    stroke: #e05638;
+    stroke-width: 3;
+  }
+  &.Sales svg {
+    fill: #010101;
+  }
+  &.Manufacturing svg {
+    fill: #e05638;
+  }
+}
+
+.location-tooltip {
+  h4 {
+    margin: 0;
+    font-family: "Noe Display", serif;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.tooltipster-sidetip {
+  &.tooltipster-noir {
+    /* tooltip theme - locations */
+    &.tooltipster-locations {
+      .tooltipster-box {
+        background: #fff;
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.4);
+      }
+      .tooltipster-content {
+        color: #010101;
+        padding: 1rem;
+      }
+    }
+    /* tooltip theme - timeline */
+    &.tooltipster-timeline {
+      .tooltipster-box {
+        background: none;
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  &.tooltipster-top {
+    .tooltipster-arrow-border,
+    .tooltipster-arrow-background {
+      border-top-color: #fff;
+    }
+  }
+}

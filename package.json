@@ -19,7 +19,8 @@
   "dependencies": {
     "jquery": "^3.6.0",
     "jquery-scrollify": "^1.0.21",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tooltipster": "^4.2.8"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
@@ -34,6 +35,7 @@
     "sass": "^1.32.10",
     "sass-loader": "^11.0.1",
     "webpack": "^5.33.2",
+    "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^4.6.0"
   }
 }

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import 'jquery-scrollify';
 import 'slick-carousel';
-import '../scss/pangea-global.scss';
+import '../scss/00.global.scss';
 
 window.jQuery = $;
 

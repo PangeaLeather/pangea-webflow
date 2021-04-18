@@ -1,11 +1,22 @@
 const path = require('path');
 const extract = require("mini-css-extract-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: {
+        global: {
+            import: './src/js/00.global.js',
+            // dependOn: 'shared',
+        },
+        who: {
+            import: './src/js/02.who.js',
+            // dependOn: 'shared',
+        },
+        shared: 'jquery',
+    },
     output: {
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
     },
     module: {
         rules: [
@@ -51,8 +62,9 @@ module.exports = {
     },
     plugins: [
         new extract({
-            filename: 'bundle.css'
-        })
+            filename: '[name].css'
+        }),
+        new BundleAnalyzerPlugin()
     ],
     externals: {
         jquery: 'jQuery'
