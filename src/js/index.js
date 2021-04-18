@@ -1,4 +1,4 @@
-import 'jquery-scrollify';
+// import 'jquery-scrollify';
 import 'slick-carousel';
 import '../scss/pangea-global.scss';
 
