@@ -45,15 +45,7 @@ $('.panel-slickslider').slick({
     speed: 300,
     slidesToShow: 1,
     autoplay: false,
-    adaptiveHeight: true
-});
-
-//slick slider custom links
-$(".next-link").click(function (e) {
-    e.preventDefault();
-    $('.slick-next').trigger('tap')
-});
-$(".prev-link").click(function (e) {
-    e.preventDefault();
-    $('.slick-prev').trigger('tap')
+    adaptiveHeight: true,
+    nextArrow: $('.next-link')[index],
+    prevArrow: $('.prev-prev')[index],
 });
