@@ -106,3 +106,8 @@
     }
   }
 }
+.next-link, .prev-link {
+    &.slick.hidden {
+        display:block;
+    }
+}

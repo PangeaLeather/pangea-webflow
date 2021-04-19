@@ -30,14 +30,14 @@ $('.loc').tooltipster({
 //     $(this).addClass('active');
 //     $('.w-round div:nth-child(5)').trigger('tap');
 // });
-$('.next-link').click(function (e) {
-    e.preventDefault();
-    $('.w-slider-arrow-right').trigger('tap')
-});
-$('.prev-link').click(function (e) {
-    e.preventDefault();
-    $('.w-slider-arrow-left').trigger('tap')
-});
+// $('.next-link').click(function (e) {
+//     e.preventDefault();
+//     $('.w-slider-arrow-right').trigger('tap')
+// });
+// $('.prev-link').click(function (e) {
+//     e.preventDefault();
+//     $('.w-slider-arrow-left').trigger('tap')
+// });
 
 $('.panel-slickslider').each(function () {
     $(this).slick({
