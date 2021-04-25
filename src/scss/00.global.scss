@@ -1,4 +1,4 @@
-@import 'webflow-breakpoints';
+@import "webflow-breakpoints";
 
 @media screen and (max-width: $break-tablet) {
   br {
@@ -17,6 +17,14 @@ ol.pagination {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  counter-reset: item;
+  list-style-type: none;
+
+  &:before {
+    content: counter(item) "  ";
+    counter-increment: item;
+  }
+
   &:hover {
     color: #e05638;
   }
@@ -47,7 +55,7 @@ ol.pagination {
 @media (max-width: $break-tablet) {
   ol.pagination {
     display: none;
-    color:#fff;
+    color: #fff;
   }
 }
 .scroll-arrow {
