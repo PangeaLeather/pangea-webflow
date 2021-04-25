@@ -28,7 +28,7 @@ ol.pagination {
     transform: translate(50%, 0);
 
     &:before {
-      content: counter(item) "  ";
+      content: counter(item, decimal-leading-zero) " ";
       counter-increment: item;
     }
 
