@@ -61,3 +61,7 @@ scroll_page();
 window.addEventListener('resize', function (event) {
     scroll_page();
 });
+
+$(".toggle-menu").click(function () {
+    $("body").toggleClass("body-freeze");
+});
