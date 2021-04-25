@@ -5,6 +5,7 @@ $color-orange: #e05638;
 body {
   &.body-freeze {
     overflow:hidden;
+    height:100vh;
   }
 }
 
