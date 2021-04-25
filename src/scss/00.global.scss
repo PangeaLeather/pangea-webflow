@@ -32,7 +32,7 @@ ol.pagination {
     &:before {
       content: counter(item, decimal-leading-zero) " ";
       counter-increment: item;
-      color: #fff;
+      color: #ccc;
       mix-blend-mode: difference;
     }
 
