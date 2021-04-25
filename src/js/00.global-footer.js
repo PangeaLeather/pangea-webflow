@@ -1,6 +1,6 @@
 import $ from 'jquery';
-import 'jquery-scrollify';
-import 'slick-carousel';
+// import 'jquery-scrollify';
+// import 'slick-carousel';
 import '../scss/00.global.scss';
 
 window.jQuery = $;
