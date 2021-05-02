@@ -75,3 +75,8 @@ window.addEventListener('resize', function (event) {
 $(".menu-toggle").click(function () {
     $("body").toggleClass("body-freeze");
 });
+
+$('.menu a').click(function () {
+    var moveTo = $(this).attr('href');
+    $.scrollify("move", moveTo);
+});

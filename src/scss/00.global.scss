@@ -82,9 +82,11 @@ ol.pagination {
     left: 0;
     right: auto;
     top: auto;
+    grid-gap: 0;
 
     li {
       transform: none;
+      margin-right: 4rem;
 
       &:before {
         content: none;
@@ -102,6 +104,9 @@ ol.pagination {
         a {
           color: $color-orange;
         }
+      }
+      &:last-child {
+        margin:0;
       }
     }
   }
