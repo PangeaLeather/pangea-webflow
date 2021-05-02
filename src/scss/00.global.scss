@@ -78,6 +78,10 @@ ol.pagination {
     position: relative;
     transform: none;
     list-style-type: none;
+    padding: 0;
+    left: 0;
+    right: auto;
+    top: auto;
 
     li {
       transform: none;
