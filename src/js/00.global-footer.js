@@ -26,7 +26,9 @@ function scroll_page() {
                 },
                 afterRender: function () {
                     var pagination = "<ol class=\"pagination\">";
+                    var scrollify_tabs = "<div><div class=\"container w-container\">" + pagination + "</div></div>";
                     var activeClass = "";
+
                     $(".panel").each(function (i) {
                         var section = $(this).attr("data-section-name");
                         var prettyname = section.split('-').join(' ');
@@ -39,7 +41,16 @@ function scroll_page() {
 
                     pagination += "</ol>";
 
-                    $("body").append(pagination);
+                    //$("body").append(pagination);
+
+
+                    if ($('body').hasClass('scrollify-tabs')) {
+                        $(this).append(pagination);
+                    } else {
+                        $(this).append(scrollify_tabs);
+                    };
+
+
                     /*
 
                     Tip: The two click events below are the same:
