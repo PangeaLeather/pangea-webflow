@@ -76,9 +76,10 @@ ol.pagination {
   body.scrollify-tabs & {
     display: flex;
     position: relative;
+    transform: none;
   }
 }
-.pagination-tabbed-wrappers {
+.pagination-tabbed-wrapper {
   position: fixed;
   top: 2rem;
   left: 0;
