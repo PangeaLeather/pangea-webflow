@@ -45,9 +45,9 @@ function scroll_page() {
 
 
                     if ($('body').hasClass('scrollify-tabs')) {
-                        $('body').append(pagination);
-                    } else {
                         $('body').append(scrollify_tabs);
+                    } else {
+                        $('body').append(pagination);
                     };
 
 
