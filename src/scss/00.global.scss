@@ -80,15 +80,22 @@ ol.pagination {
     list-style-type: none;
 
     li {
+      transform: none;
+
       &:before {
         content: none;
         display: none;
       }
       a {
+        opacity: 1;
+        color: #ccc;
         &:before {
           content: none;
           display: none;
         }
+      }
+      &.active {
+
       }
     }
   }
@@ -98,6 +105,7 @@ ol.pagination {
   top: 2rem;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 .scroll-arrow {
   mix-blend-mode: difference;
