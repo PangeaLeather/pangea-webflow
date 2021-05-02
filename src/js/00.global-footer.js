@@ -73,9 +73,6 @@ $(window).resize(function () {
     if ($(window).width() > 991) {
         $('.panel-slickslider').not('.slick-initialized').slick();
     }
-    else {
-        alert('Less than 991');
-    }
 });
 
 $(".menu-toggle").click(function () {
