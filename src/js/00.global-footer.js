@@ -26,7 +26,6 @@ function scroll_page() {
                 },
                 afterRender: function () {
                     var pagination = "<ol class=\"pagination\">";
-                    var scrollify_tabs = "<div><div class=\"container w-container\">" + pagination + "</div></div>";
                     var activeClass = "";
 
                     $(".panel").each(function (i) {
@@ -45,7 +44,7 @@ function scroll_page() {
 
 
                     if ($('body').hasClass('scrollify-tabs')) {
-                        $('body').append("<div><div class=\"container w-container\">" + pagination + "</div></div>");
+                        $('body').append("<div class=\"pagination-tabbed-wrapper\"><div class=\"container w-container\">" + pagination + "</div></div>");
                     } else {
                         $('body').append(pagination);
                     };
