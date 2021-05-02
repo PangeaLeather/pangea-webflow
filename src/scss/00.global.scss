@@ -77,6 +77,20 @@ ol.pagination {
     display: flex;
     position: relative;
     transform: none;
+    list-style-type: none;
+
+    li {
+      &:before {
+        content: none;
+        display: none;
+      }
+      a {
+        &:before {
+          content: none;
+          display: none;
+        }
+      }
+    }
   }
 }
 .pagination-tabbed-wrapper {
