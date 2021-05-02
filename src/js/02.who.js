@@ -38,16 +38,3 @@ $('.loc').tooltipster({
 //     e.preventDefault();
 //     $('.w-slider-arrow-left').trigger('tap')
 // });
-
-$('.panel-slickslider').each(function () {
-    $(this).slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        autoplay: false,
-        adaptiveHeight: true,
-        prevArrow: $(this).find('.prev-link'),
-        nextArrow: $(this).find('.next-link')
-    });
-});

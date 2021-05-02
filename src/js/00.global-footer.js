@@ -76,17 +76,6 @@ $(".menu-toggle").click(function () {
     $("body").toggleClass("body-freeze");
 });
 
-// $('.menu-small-link').click(function () {
-//     var moveTo = $(this).attr('href');
-//     $.scrollify("move", moveTo);
-// });
-
-// var pathname = window.location.pathname; // Returns path only (/path/example.html)
-// var url = window.location.href;     // Returns full URL (https://example.com/path/example.html)
-// var origin = window.location.origin;   // Returns base URL (https://example.com)
-// var parts = url.split('/');
-// var lastSegment = parts.pop() || parts.pop();  // handle potential trailing slash
-
 $(".menu-small-link").each(function () {
     var data_page = $(this).data("page");
     var href = $(this).attr("href");
@@ -98,4 +87,27 @@ $(".menu-small-link").each(function () {
     else {
         $(this).attr("href", "/" + data_page + href);
     }
+});
+
+$('.panel-slickslider').each(function () {
+    $(this).slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        autoplay: false,
+        adaptiveHeight: true,
+        prevArrow: $(this).find('.prev-link'),
+        nextArrow: $(this).find('.next-link'),
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: "unslick"
+            },
+
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 });
