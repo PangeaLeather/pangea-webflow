@@ -95,17 +95,22 @@ ol.pagination {
         }
       }
       &.active {
-
+        a {
+          color: $color-orange;
+        }
       }
     }
   }
 }
 .pagination-tabbed-wrapper {
   position: fixed;
-  top: 2rem;
+  top: 4rem;
   left: 0;
   width: 100%;
   z-index: 1;
+  @media (max-width: $break-tablet) {
+    display: none;
+  }
 }
 .scroll-arrow {
   mix-blend-mode: difference;
