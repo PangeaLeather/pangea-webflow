@@ -74,8 +74,10 @@ ol.pagination {
     color: #fff;
   }
   body.scrollify-tabs & {
-    // left: 0;
-    // top: 0;
+    left: 0;
+    top: 0;
+    right: auto;
+    display: flex;
   }
 }
 .scroll-arrow {
