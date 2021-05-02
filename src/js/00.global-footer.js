@@ -78,5 +78,5 @@ $(".menu-toggle").click(function () {
 
 $('.menu a').click(function () {
     var moveTo = $(this).attr('href');
-    $.scrollify("move", moveTo);
+    $.scrollify.move(moveTo);
 });
