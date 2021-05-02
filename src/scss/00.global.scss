@@ -4,8 +4,8 @@ $color-orange: #e05638;
 
 body {
   &.body-freeze {
-    overflow:hidden;
-    height:100vh;
+    overflow: hidden;
+    height: 100vh;
   }
 }
 
@@ -69,11 +69,13 @@ ol.pagination {
       }
     }
   }
-}
-@media (max-width: $break-tablet) {
-  ol.pagination {
+  @media (max-width: $break-tablet) {
     display: none;
     color: #fff;
+  }
+  body.scrollify-tabs & {
+    left: 0;
+    top: 0;
   }
 }
 .scroll-arrow {
