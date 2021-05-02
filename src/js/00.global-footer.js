@@ -78,5 +78,19 @@ $(".menu-toggle").click(function () {
 
 $('.menu a').click(function () {
     var moveTo = $(this).attr('href');
-    $.scrollify.move(moveTo);
+    $.scrollify("move", moveTo);
+});
+
+var pathname = window.location.pathname; // Returns path only (/path/example.html)
+var url = window.location.href;     // Returns full URL (https://example.com/path/example.html)
+var origin = window.location.origin;   // Returns base URL (https://example.com)
+var parts = url.split('/');
+var lastSegment = parts.pop() || parts.pop();  // handle potential trailing slash
+
+$("menu a").each(function () {
+    var last_path = ($this).data("page");
+    var href = $this.attr("href");
+    if (window.location.href.indexOf(last_path) > -1) {
+        ($this).attr("href", last_path + href);
+    }
 });
