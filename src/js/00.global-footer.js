@@ -80,15 +80,19 @@ $(".menu-toggle").click(function () {
 });
 
 $(".menu-small-link").each(function () {
-    var data_page = $(this).data("page");
+    //var data_page = $(this).data("page");
+    var data_anchor = $(this).data("anchor");
     var href = $(this).attr("href");
-    if (window.location.href.indexOf(data_page) > -1) {
+    if (window.location.href.indexOf(href) > -1) {
         $(this).click(function () {
-            $.scrollify.instantMove(href);
+            $.scrollify.instantMove(data_anchor);
         });
     }
     else {
-        $(this).attr("href", "/" + data_page + href);
+        //$(this).attr("href", "/" + data_page + href);
+        $(window).load(function () {
+            $.scrollify.instantMove(data_anchor);
+        });
     }
 });
 
