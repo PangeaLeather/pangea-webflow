@@ -60,21 +60,6 @@ function scroll_page() {
 
                     */
                     $(".pagination a").on("click", $.scrollify.move);
-
-                    $(".menu-small-link").each(function () {
-                        var data_page = $(this).data("page");
-                        var href = $(this).attr("href");
-                        if (window.location.href.indexOf(data_page) > -1) {
-                            $(this).click(function () {
-                                $.scrollify.instantMove(href);
-                            });
-                        }
-                        else {
-                            $(this).attr("href", "/" + data_page + href);
-                        }
-                    });
-
-
                 }
             });
         });
@@ -94,7 +79,18 @@ $(".menu-toggle").click(function () {
     $("body").toggleClass("body-freeze");
 });
 
-
+$(".menu-small-link").each(function () {
+    var data_page = $(this).data("page");
+    var href = $(this).attr("href");
+    if (window.location.href.indexOf(data_page) > -1) {
+        $(this).click(function () {
+            $.scrollify.instantMove(href);
+        });
+    }
+    else {
+        $(this).attr("href", "/" + data_page + href);
+    }
+});
 
 $('.panel-slickslider').each(function () {
     $(this).slick({
