@@ -1,6 +1,7 @@
 @import "webflow-breakpoints";
 
 $color-orange: #e05638;
+$color-onyx: #010101;
 
 body {
   &.body-freeze {
@@ -94,7 +95,7 @@ ol.pagination {
       }
       a {
         opacity: 1;
-        color: #ccc;
+        color: #999;
         &:before {
           content: none;
           display: none;
