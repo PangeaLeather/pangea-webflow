@@ -60,6 +60,11 @@ function scroll_page() {
 
                     */
                     $(".pagination a").on("click", $.scrollify.move);
+
+                    if(window.location.hash) {
+                        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+                        $.scrollify.instantMove(hash);
+                    }
                 }
             });
         });
@@ -79,23 +84,18 @@ $(".menu-toggle").click(function () {
     $("body").toggleClass("body-freeze");
 });
 
-// $(".menu-small-link").each(function () {
-//     var data_page = $(this).data("page");
-//     var data_anchor = $(this).data("anchor");
-//     var href = $(this).attr("href");
-//     if (window.location.href.indexOf(data_page) > -1) {
-//         $(this).click(function () {
-//             $.scrollify.instantMove(href);
-//         });
-//     }
-//     else {
-//         // $(this).attr("href", "/" + data_page + href);
-//         $(this).click(function () {
-//             window.location.href = "href";
-//             $.scrollify.instantMove(data_anchor);
-//         });
-//     }
-// });
+$(".menu-small-link").each(function () {
+    var data_page = $(this).data("page");
+    var href = $(this).attr("href");
+    if (window.location.href.indexOf(data_page) > -1) {
+        $(this).click(function () {
+            $.scrollify.instantMove(href);
+        });
+    }
+    else {
+        $(this).attr("href", "/" + data_page + href);
+    }
+});
 
 $('.panel-slickslider').each(function () {
     $(this).slick({
