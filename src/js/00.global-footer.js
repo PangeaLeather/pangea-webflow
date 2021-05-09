@@ -43,7 +43,7 @@ function scroll_page() {
                     //$("body").append(pagination);
 
 
-                    if ($('body').hasClass('scrollify-tabs')) {
+                    if ($('body').hasClass('body-scrollify-tabs')) {
                         $('body').append("<div class=\"pagination-tabbed-wrapper\"><div class=\"container w-container\">" + pagination + "</div></div>");
                     } else {
                         $('body').append(pagination);
