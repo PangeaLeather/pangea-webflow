@@ -84,18 +84,26 @@ $(".menu-toggle").click(function () {
     $("body").toggleClass("body-freeze");
 });
 
-// $(".menu-small-link").each(function () {
-//     var data_page = $(this).data("page");
-//     var href = $(this).attr("href");
-//     if (window.location.href.indexOf(data_page) > -1) {
-//         $(this).click(function () {
-//             $.scrollify.instantMove(href);
-//         });
-//     }
-//     else {
-//         $(this).attr("href", "/" + data_page + href);
-//     }
-// });
+// modify menu small links in submenu to be the correct scrollify link on page load
+// on current page, need .menu-small-link href = ex: "#our-people"
+// for any other .menu-small-link not related to current page, need href = "/who-we-are#our-people"
+// V1: <a href="[Sub Nav Item 1 URL]" data-page="[Slug]" class="menu-small-link">[Sub Nav Item 1]</a>
+// V2: <a href="/[Slug]" data-anchor="[Sub Nav Item 1 URL]" class="menu-small-link">[Sub Nav Item 1]</a>
+// V3? <a href="/[Slug][Sub Nav Item 1 URL]" data-page="[Slug]" data-anchor="[Sub Nav Item 1 URL]" class="menu-small-link">[Sub Nav Item 1]</a>
+
+$(".menu-small-link").each(function () {
+    var data_page = $(this).data("page");
+    var data_anchor = $(this).data("anchor");
+    //var link_href = $(this).attr("href");
+    if (window.location.href.indexOf(data_page) > -1) {
+        $(this).click(function () {
+            $.scrollify.instantMove(data_anchor);
+        });
+    }
+    // else {
+    //     $(this).attr("href", "/" + data_page + link_href);
+    // }
+});
 
 $('.panel-slickslider').each(function () {
     $(this).slick({
