@@ -106,9 +106,9 @@ ol.pagination {
           color: $color-orange;
         }
       }
-      &:first-child {
-        display: none;
-      }
+      // &:first-child {
+      //   display: none;
+      // }
       &:last-child {
         margin: 0;
       }
