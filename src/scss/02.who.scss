@@ -3,7 +3,7 @@
 .tl-point {
   fill: #e05638;
 
-  &:hover {
+  &:hover, &.tooltipstered {
     fill: #fff;
   }
 }

@@ -31,7 +31,9 @@ $('.loc').tooltipster({
     theme: ['tooltipster-noir', 'tooltipster-locations']
 })
 
-$('#tl-year-1832').tooltipster('show');
+// $('#tl-year-1832').tooltipster('show');
+
+$('#tl-year-1832').trigger('click');
 
 
 // $('#heroslide5').click(function (e) {
