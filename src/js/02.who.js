@@ -40,13 +40,13 @@ $('.loc').tooltipster({
 
 // $('#tl-year-1832').trigger('click');
 
-$('.tl-point')
-    .focus(function () {
-        $(this).tooltipster('show');
-    })
-    .blur(function () {
-        $(this).tooltipster('hide');
-    });
+// $('.tl-point')
+//     .focus(function () {
+//         $(this).tooltipster('show');
+//     })
+//     .blur(function () {
+//         $(this).tooltipster('hide');
+//     });
 
 
 // $('#heroslide5').click(function (e) {
