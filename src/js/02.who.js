@@ -7,9 +7,6 @@ window.jQuery = $;
 
 
 $('.tl-point').tooltipster({
-    functionInit: function () {
-        $('#tl-year-1832').tooltipster('show');
-    },
     functionBefore: function (instance, helper) {
         $.each($.tooltipster.instances(), function (i, instance) {
             instance.close();
@@ -40,7 +37,10 @@ tl_point.click(function () {
     tl_point.not(this).removeClass('active-tooltip');
 });
 
-// $('#tl-year-1832').tooltipster('show');
+$(window).load(function () {
+    $('#tl-year-1832').tooltipster('show');
+});
+
 
 // $('#tl-year-1832').trigger('click');
 
