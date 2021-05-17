@@ -24,11 +24,16 @@ $('.tl-point').tooltipster({
         // mouseleave: true,
         click: true,
         tap: true    // For touch device
-    }
+    },
+    arrow: false,
 })
 $('.loc').tooltipster({
     theme: ['tooltipster-noir', 'tooltipster-locations']
 })
+
+$('#tl-year-1832').tooltipster('show');
+
+
 // $('#heroslide5').click(function (e) {
 //     e.preventDefault();
 //     $('.hero-link').removeClass('active');
