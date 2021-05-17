@@ -14,7 +14,7 @@ $('.tl-point').tooltipster({
     },
     functionReady: function (instance, helper) {
         $.each($.tooltipster.instances(), function (i, instance) {
-            $(this).addclass('active');
+            this.classList.add('class-1');
         });
     },
     maxWidth: 400,
