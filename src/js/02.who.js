@@ -37,10 +37,9 @@ tl_point.click(function () {
     tl_point.not(this).removeClass('active-tooltip');
 });
 
-$(window).load(function () {
+document.addEventListener("DOMContentLoaded", function () {
     $('#tl-year-1832').tooltipster('show');
 });
-
 
 // $('#tl-year-1832').trigger('click');
 
