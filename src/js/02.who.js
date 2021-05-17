@@ -7,16 +7,21 @@ window.jQuery = $;
 
 
 $('.tl-point').tooltipster({
+    functionBefore: function (instance, helper) {
+        $.each($.tooltipster.instances(), function (i, instance) {
+            instance.close();
+        });
+    },
     maxWidth: 400,
     theme: ['tooltipster-noir', 'tooltipster-timeline'],
     trigger: 'custom',
     triggerOpen: {
-        mouseenter: true,
+        // mouseenter: true,
         click: true,
         tap: true    // For touch device
     },
     triggerClose: {
-        mouseleave: true,
+        // mouseleave: true,
         click: true,
         tap: true    // For touch device
     }
