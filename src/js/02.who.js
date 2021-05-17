@@ -12,11 +12,6 @@ $('.tl-point').tooltipster({
             instance.close();
         });
     },
-    functionReady: function () {
-        $(this).on('click', function(){
-            $(this).addClass('current');
-        });
-    },
     maxWidth: 400,
     theme: ['tooltipster-noir', 'tooltipster-timeline'],
     trigger: 'custom',
@@ -36,7 +31,13 @@ $('.loc').tooltipster({
     theme: ['tooltipster-noir', 'tooltipster-locations']
 })
 
-// $('#tl-year-1832').tooltipster('show');
+var tl_point = $('.tl-point');
+tl_point.click(function() {
+  $(this).toggleClass('active-tooltip');
+  tl_point.not(this).removeClass('active-tooltip');
+});
+
+$('#tl-year-1832').tooltipster('show');
 
 // $('#tl-year-1832').trigger('click');
 
