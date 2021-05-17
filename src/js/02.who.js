@@ -13,7 +13,9 @@ $('.tl-point').tooltipster({
         });
     },
     functionReady: function () {
-        $(this).addClass('test');
+        $(this).on('click', function(){
+            $(this).addClass('current');
+        });
     },
     maxWidth: 400,
     theme: ['tooltipster-noir', 'tooltipster-timeline'],
