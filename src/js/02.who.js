@@ -7,6 +7,9 @@ window.jQuery = $;
 
 
 $('.tl-point').tooltipster({
+    functionInit: function () {
+        $('#tl-year-1832').tooltipster('show');
+    },
     functionBefore: function (instance, helper) {
         $.each($.tooltipster.instances(), function (i, instance) {
             instance.close();
@@ -32,12 +35,12 @@ $('.loc').tooltipster({
 })
 
 var tl_point = $('.tl-point');
-tl_point.click(function() {
-  $(this).toggleClass('active-tooltip');
-  tl_point.not(this).removeClass('active-tooltip');
+tl_point.click(function () {
+    $(this).toggleClass('active-tooltip');
+    tl_point.not(this).removeClass('active-tooltip');
 });
 
-$('#tl-year-1832').tooltipster('show');
+// $('#tl-year-1832').tooltipster('show');
 
 // $('#tl-year-1832').trigger('click');
 

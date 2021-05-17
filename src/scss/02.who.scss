@@ -5,7 +5,7 @@
   background:none;
   padding:0;
 
-  &:hover {
+  &:hover svg, &.active-tooltip svg {
     fill: #fff;
   }
 }
