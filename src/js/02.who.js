@@ -12,8 +12,8 @@ $('.tl-point').tooltipster({
             instance.close();
         });
     },
-    functionReady: function(){
-        $(this).attr('aria-hidden', false);
+    functionReady: function () {
+        $(this).addClass('test');
     },
     maxWidth: 400,
     theme: ['tooltipster-noir', 'tooltipster-timeline'],
@@ -36,7 +36,15 @@ $('.loc').tooltipster({
 
 // $('#tl-year-1832').tooltipster('show');
 
-$('#tl-year-1832').trigger('click');
+// $('#tl-year-1832').trigger('click');
+
+$('.tl-point')
+    .focus(function () {
+        $(this).tooltipster('show');
+    })
+    .blur(function () {
+        $(this).tooltipster('hide');
+    });
 
 
 // $('#heroslide5').click(function (e) {
