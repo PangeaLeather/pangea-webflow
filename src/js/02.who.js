@@ -38,7 +38,7 @@ tl_point.click(function () {
 });
 
 window.addEventListener("load", function () {
-    $('#tl-year-1832').delay(1000).tooltipster('show');
+    $('#tl-year-1832').delay(1000).tooltipster('show').addClass('active-tooltip');
 });
 
 // $('#tl-year-1832').trigger('click');
