@@ -12,6 +12,11 @@ $('.tl-point').tooltipster({
             instance.close();
         });
     },
+    functionReady: function (instance, helper) {
+        $.each($.tooltipster.instances(), function (i, instance) {
+            $(this).addclass('active');
+        });
+    },
     maxWidth: 400,
     theme: ['tooltipster-noir', 'tooltipster-timeline'],
     trigger: 'custom',
