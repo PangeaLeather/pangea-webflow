@@ -23,13 +23,13 @@
   h4 {
     margin: 0;
     font-family: "Noe Display", serif;
-    font-size: 10em;
+    font-size: 8em;
     color: #fff;
     line-height: 1em;
     transform: translate(0, -1rem);
 
     @media screen and (max-width: $break-tablet) {
-      font-size: 8em;
+      font-size: 6em;
       transform: none;
     }
   }

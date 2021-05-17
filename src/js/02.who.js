@@ -12,12 +12,12 @@ $('.tl-point').tooltipster({
     trigger: 'custom',
     triggerOpen: {
         mouseenter: true,
-        // click: true,
+        click: true,
         tap: true    // For touch device
     },
     triggerClose: {
         mouseleave: true,
-        // click: true,
+        click: true,
         tap: true    // For touch device
     }
 })
