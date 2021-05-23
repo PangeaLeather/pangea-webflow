@@ -111,14 +111,14 @@ ol.pagination {
         margin: 0;
       }
     }
+    & body.hide-first-tab & {
+      &:first-child {
+        display: none;
+      }
+    }
   }
   body.body-nopagination & {
     display: none;
-  }
-  body.hide-first-tab & {
-    &:first-child {
-      display: none;
-    }
   }
 }
 .pagination-tabbed-wrapper {
