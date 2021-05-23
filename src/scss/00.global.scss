@@ -112,7 +112,7 @@ ol.pagination {
       &:last-child {
         margin: 0;
       }
-      body.hide-first-tab {
+      body.hide-first-tab & {
         &:first-child {
           display: none;
         }
