@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import 'jquery-scrollify';
-import 'slick-carousel';
+import '@accessible360/accessible-slick';
 import '../scss/00.global.scss';
 
 if (Webflow.env('editor') != undefined) {

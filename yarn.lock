@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@accessible360/accessible-slick@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@accessible360/accessible-slick/-/accessible-slick-1.0.1.tgz#8a2a138d2eeccc2ecd54112439857f70dc454719"
+  integrity sha512-fAdHKy0CLuApCHFgRs2zcQpzjEdlZUuJND1zIY8T5PiV8bB52gpomjCUFCZwCk9lb87WC0IJGIUaPD6RToocqA==
+
 "@babel/code-frame@^7.12.13":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.13.tgz#dcfc826beef65e75c50e21d3837d7d95798dd658"

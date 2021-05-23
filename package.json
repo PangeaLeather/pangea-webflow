@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jcackowski/pangea-webflow#readme",
   "dependencies": {
+    "@accessible360/accessible-slick": "^1.0.1",
     "jquery": "^3.6.0",
     "jquery-scrollify": "^1.0.21",
     "slick-carousel": "^1.8.1",
