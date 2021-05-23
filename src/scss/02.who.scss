@@ -1,7 +1,8 @@
 @import "webflow-breakpoints";
+@import "variables";
 
 .tl-point {
-  fill: #e05638;
+  fill: $color-orange;
   background:none;
   padding:0;
 
@@ -55,14 +56,18 @@
   }
   &.Headquarters svg {
     fill: #fff;
-    stroke: #e05638;
+    stroke: $color-orange;
     stroke-width: 3;
   }
   &.Sales svg {
-    fill: #010101;
+    fill: $color-onyx;
   }
   &.Manufacturing svg {
-    fill: #e05638;
+    fill: $color-orange;
+  }
+  &.Combo svg {
+    fill: $color-orange;
+    stroke: $color-onyx;
   }
 }
 

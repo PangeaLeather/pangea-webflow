@@ -1,7 +1,5 @@
 @import "webflow-breakpoints";
-
-$color-orange: #e05638;
-$color-onyx: #010101;
+@import "variables";
 
 body {
   &.body-freeze {
