@@ -108,11 +108,14 @@ ol.pagination {
           color: $color-orange;
         }
       }
-      // &:first-child {
-      //   display: none;
-      // }
+
       &:last-child {
         margin: 0;
+      }
+      body.hide-first-tab {
+        &:first-child {
+          display: none;
+        }
       }
     }
   }
