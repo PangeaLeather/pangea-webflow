@@ -3,10 +3,12 @@
 
 .tl-point {
   fill: $color-orange;
-  background:none;
-  padding:0;
+  background: none;
+  padding: 0;
+  z-index: 100;
 
-  &:hover svg, &.active-tooltip svg {
+  &:hover svg,
+  &.active-tooltip svg {
     fill: #fff;
   }
 }
@@ -26,13 +28,13 @@
   h4 {
     margin: 0;
     font-family: "Noe Display", serif;
-    font-size: 6vw;
+    font-size: 6rem;
     color: #fff;
     line-height: 1em;
     transform: translate(0, -1rem);
 
     @media screen and (max-width: $break-tablet) {
-      font-size: 6em;
+      font-size: 4rem;
       transform: none;
     }
   }
@@ -95,6 +97,7 @@
       .tooltipster-content {
         color: #010101;
         padding: 1rem;
+        overflow: visible;
       }
     }
     /* tooltip theme - timeline */
@@ -114,11 +117,12 @@
     }
   }
 }
-.next-link, .prev-link {
-    &.slick.hidden {
-        display:block;
-    }
+.next-link,
+.prev-link {
+  &.slick.hidden {
+    display: block;
+  }
 }
 .panel-slickslider {
-    height:auto !important;
+  height: auto !important;
 }
