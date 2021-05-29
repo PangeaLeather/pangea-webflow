@@ -13,6 +13,14 @@ body {
     display: none;
   }
 }
+@media screen and (max-height: 767px) {
+  body.body-scrollify-tabs ol.pagination {
+    display: none;
+  }
+  .scrollify-tabs-static {
+    display: none;
+  }
+}
 
 ol.pagination {
   position: fixed;
@@ -41,7 +49,7 @@ ol.pagination {
       color: #ccc;
       mix-blend-mode: difference;
     }
-    &:hover:before{
+    &:hover:before {
       color: $color-orange;
     }
 
