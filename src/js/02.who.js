@@ -54,12 +54,6 @@ myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 
 
-$('.tl-point').hover(function () {
-    $('timeline-desktop').css('z-index', '300')
-}, function () {
-    $('timeline-desktop').css('z-index', '1')
-});
-
 // $('#tl-year-1832').trigger('click');
 
 // $('.tl-point')

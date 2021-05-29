@@ -6,6 +6,7 @@
   background: none;
   padding: 0;
   z-index: 100;
+  pointer-events: all;
 
   &:hover svg,
   &.active-tooltip svg {
@@ -128,4 +129,7 @@
 }
 .panel-slickslider {
   height: auto !important;
+}
+.timeline-desktop {
+  pointer-events: none;
 }
