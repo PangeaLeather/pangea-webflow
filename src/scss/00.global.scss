@@ -41,6 +41,9 @@ ol.pagination {
       color: #ccc;
       mix-blend-mode: difference;
     }
+    &:hover:before{
+      color: $color-orange;
+    }
 
     a {
       padding-left: 2rem;
