@@ -43,15 +43,22 @@ window.addEventListener("load", function () {
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
-      document.body.style.backgroundColor = "yellow";
+        document.body.style.backgroundColor = "yellow";
     } else {
-      document.body.style.backgroundColor = "pink";
+        document.body.style.backgroundColor = "pink";
     }
-  }
+}
 
-  var x = window.matchMedia("(max-width: 700px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+$('.tl-point').hover(function () {
+    $('timeline-desktop').css('z-index', '300')
+}, function () {
+    $('timeline-desktop').css('z-index', '1')
+});
 
 // $('#tl-year-1832').trigger('click');
 
