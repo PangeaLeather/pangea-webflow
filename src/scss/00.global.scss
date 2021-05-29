@@ -140,7 +140,7 @@ body.body-scrollify-tabs.hide-first-tab {
   mix-blend-mode: difference;
 }
 //hide tabbed pagination on small viewport heights
-@media screen and (max-height: 767px) {
+@media (max-height: 767px) and (min-width: 992px) {
   body.body-scrollify-tabs ol.pagination {
     display: none;
   }
