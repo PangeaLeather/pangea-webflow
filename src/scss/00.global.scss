@@ -13,14 +13,6 @@ body {
     display: none;
   }
 }
-@media screen and (max-height: 767px) {
-  body.body-scrollify-tabs ol.pagination {
-    display: none;
-  }
-  .scrollify-tabs-static {
-    display: none;
-  }
-}
 
 ol.pagination {
   position: fixed;
@@ -146,4 +138,13 @@ body.body-scrollify-tabs.hide-first-tab {
 }
 .scroll-arrow {
   mix-blend-mode: difference;
+}
+//hide tabbed pagination on small viewport heights
+@media screen and (max-height: 767px) {
+  body.body-scrollify-tabs ol.pagination {
+    display: none;
+  }
+  .scrollify-tabs-static {
+    display: none;
+  }
 }
