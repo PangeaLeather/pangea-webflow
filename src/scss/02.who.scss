@@ -93,11 +93,11 @@
         border: 0 none;
         border-radius: 0;
         box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.4);
-      }
-      .tooltipster-content {
-        color: #010101;
-        padding: 1rem;
-        overflow: visible;
+        .tooltipster-content {
+          color: #010101;
+          padding: 1rem;
+          overflow: visible;
+        }
       }
     }
     /* tooltip theme - timeline */
@@ -107,6 +107,9 @@
         border: 0 none;
         border-radius: 0;
         box-shadow: none;
+        .tooltipster-content {
+          overflow: visible;
+        }
       }
     }
   }
