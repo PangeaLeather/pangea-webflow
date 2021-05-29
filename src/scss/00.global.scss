@@ -43,6 +43,8 @@ ol.pagination {
     }
 
     a {
+      padding-left: 2rem;
+      margin-left: -2rem;
       text-decoration: none;
       transition: all 300ms;
       opacity: 0;
