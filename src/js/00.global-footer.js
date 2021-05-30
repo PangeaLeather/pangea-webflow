@@ -20,6 +20,7 @@ if (Webflow.env('editor') != undefined) {
             $(function () {
                 $.scrollify({
                     section: ".panel",
+                    offset: 1,
                     before: function (i, panels) {
 
                         var ref = panels[i].attr("data-section-name");
