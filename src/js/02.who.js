@@ -27,6 +27,7 @@ $('.tl-point').tooltipster({
     },
     arrow: false,
     viewportAware: false,
+    side: ['right'],
 })
 $('.loc').tooltipster({
     theme: ['tooltipster-noir', 'tooltipster-locations']
