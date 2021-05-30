@@ -26,6 +26,7 @@ $('.tl-point').tooltipster({
         tap: true    // For touch device
     },
     arrow: false,
+    viewportAware: false,
 })
 $('.loc').tooltipster({
     theme: ['tooltipster-noir', 'tooltipster-locations']
