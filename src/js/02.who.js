@@ -39,7 +39,11 @@ tl_point.click(function () {
     tl_point.not(this).removeClass('active-tooltip');
 });
 
-window.addEventListener("load", function () {
+// window.addEventListener("load", function () {
+//     $('#tl-year-1832').delay(1000).tooltipster('show').addClass('active-tooltip');
+// });
+
+$(window).on("load", function() {
     $('#tl-year-1832').delay(1000).tooltipster('show').addClass('active-tooltip');
 });
 
