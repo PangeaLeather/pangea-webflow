@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
     //     tl_embed.attr("style", styleStr);
     //     $(this).attr("style","");
     // });
-    $('#tl-year-1832').delay(1000).tooltipster('show').addClass('active-tooltip');
+    $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
 });
 
 function myFunction(x) {
