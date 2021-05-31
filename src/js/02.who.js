@@ -40,11 +40,12 @@ tl_point.click(function () {
 });
 
 window.addEventListener("load", function () {
-    // $(".tl-point").each(function () {
-    //     var tl_embed = $(this).parent();
-    //     var styleStr = $(this).attr("style");
-    //     tl_embed.attr("style", styleStr);
-    // });
+    $(".tl-point").each(function () {
+        var tl_embed = $(this).parent();
+        var styleStr = $(this).attr("style");
+        tl_embed.attr("style", styleStr);
+        $(this).attr("style","");
+    });
     $('#tl-year-1832').delay(1000).tooltipster('show').addClass('active-tooltip');
 });
 
