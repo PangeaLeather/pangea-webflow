@@ -40,14 +40,15 @@ tl_point.click(function () {
 });
 
 window.addEventListener("load", function () {
-    var load1832 = $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
     setTimeout(function () {
-        load1832
+        $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
     }, 2000);
 });
 
 // $(window).on("load", function () {
-//     $('#tl-year-1832').delay(1000).tooltipster('show').addClass('active-tooltip');
+//     setTimeout(function () {
+//         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
+//     }, 2000);
 // });
 
 function myFunction(x) {
