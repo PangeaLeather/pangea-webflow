@@ -39,10 +39,16 @@ tl_point.click(function () {
     tl_point.not(this).removeClass('active-tooltip');
 });
 
-window.addEventListener("load", function () {
-    // setTimeout(function () {
-    //     $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
-    // }, 2000);
+// window.addEventListener("load", function () {
+//     // setTimeout(function () {
+//     //     $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
+//     // }, 2000);
+//     if (location.hash === "#our-heritage") {
+//         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
+//     }
+// });
+
+$(function () {
     if (location.hash === "#our-heritage") {
         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
     }
