@@ -39,22 +39,15 @@ tl_point.click(function () {
     tl_point.not(this).removeClass('active-tooltip');
 });
 
-// window.addEventListener("load", function () {
-//     // setTimeout(function () {
-//     //     $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
-//     // }, 2000);
-//     if (location.hash === "#our-heritage") {
-//         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
-//     }
-// });
 
-function locationHashChanged() {
-    if (location.hash === '#cool-feature') {
-        $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
-    }
-}
-
-window.onhashchange = locationHashChanged
+window.addEventListener("load", function () {
+    $(".tl-point").each(function () {
+        var tl_embed = $(this).parent();
+        var styleStr = $(this).attr("style");
+        tl_embed.attr("style", styleStr);
+    });
+    $('#tl-year-1832').delay(1000).tooltipster('show').addClass('active-tooltip');
+});
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
