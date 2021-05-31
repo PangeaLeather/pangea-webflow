@@ -43,7 +43,7 @@ window.addEventListener("load", function () {
     // setTimeout(function () {
     //     $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
     // }, 2000);
-    if (location.hash === "#who-we-are") {
+    if (location.hash === "#our-heritage") {
         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
     }
 });
