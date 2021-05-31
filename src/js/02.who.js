@@ -48,11 +48,13 @@ tl_point.click(function () {
 //     }
 // });
 
-$(function () {
-    if (location.hash === "#our-heritage") {
+function locationHashChanged() {
+    if (location.hash === '#cool-feature') {
         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
     }
-});
+}
+
+window.onhashchange = locationHashChanged
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
