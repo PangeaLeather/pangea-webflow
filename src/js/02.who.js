@@ -40,16 +40,13 @@ tl_point.click(function () {
 });
 
 window.addEventListener("load", function () {
-    setTimeout(function () {
+    // setTimeout(function () {
+    //     $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
+    // }, 2000);
+    if (location.hash === "#who-we-are") {
         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
-    }, 2000);
+    }
 });
-
-// $(window).on("load", function () {
-//     setTimeout(function () {
-//         $('#tl-year-1832').tooltipster('show').addClass('active-tooltip');
-//     }, 2000);
-// });
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
