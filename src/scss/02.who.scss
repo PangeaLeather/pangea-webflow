@@ -121,6 +121,11 @@
     }
   }
 }
+.tooltipster-base {
+  @media screen and (max-width: $break-tablet) {
+    display: none !important;
+  }
+}
 .next-link,
 .prev-link {
   &.slick.hidden {
