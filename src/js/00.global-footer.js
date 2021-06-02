@@ -85,9 +85,11 @@ if (Webflow.env('editor') != undefined) {
         }
     });
 
-    $(".menu-toggle").click(function () {
-        $("body").toggleClass("body-freeze");
-    });
+    if ($(window).width() > 991) {
+        $(".menu-toggle").click(function () {
+            $("body").toggleClass("body-freeze");
+        });
+    }
 
     // modify menu small links in submenu to be the correct scrollify link on page load
     // on current page, need .menu-small-link href = ex: "#our-people"
