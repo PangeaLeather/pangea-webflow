@@ -101,8 +101,9 @@ if (Webflow.env('editor') != undefined) {
     $(".menu-small-link").each(function () {
         var data_page = $(this).data("page");
         var data_anchor = $(this).data("anchor");
+        var last_index = window.location.pathname.split("/").pop();
         //var link_href = $(this).attr("href");
-        if (window.location.href.indexOf(data_page) > -1) {
+        if (last_index == data_page) {
             // $(this).click(function () {
             //     $.scrollify.instantMove(data_anchor);
             // });
