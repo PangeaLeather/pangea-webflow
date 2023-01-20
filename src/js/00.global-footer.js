@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import 'jquery-scrollify';
+//import 'jquery-scrollify';
 import '@accessible360/accessible-slick';
 import '../scss/00.global.scss';
 
